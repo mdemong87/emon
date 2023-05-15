@@ -1,10 +1,10 @@
-import Header from './Component/Header'
-import Footer from './Component/Footer';
-import './globals.css'
+import { Roboto } from 'next/font/google';
 import Container from './Component/Container';
-import { Ubuntu,Shadows_Into_Light } from 'next/font/google'
+import Footer from './Component/Footer';
+import Header from './Component/Header';
+import './globals.css';
 
-const ubuntu = Ubuntu ({
+const roboto = Roboto({
   weight: '400',
   subsets: ['latin'],
 });
@@ -17,11 +17,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={ubuntu.className}>
-      <Container>
-          <Header/>
+      <body className={roboto.className}>
+        <Container>
+          <Header />
           {children}
-          <Footer/>
+          <Footer />
         </Container>
       </body>
     </html>

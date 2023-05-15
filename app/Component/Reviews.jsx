@@ -4,7 +4,7 @@ import { IoMdQuote } from "react-icons/io";
 export default function Reviews() {
     return (
         <div className="projctsWrp">
-            <span>What Client Say</span>
+            <span className="into">What Client Say</span>
             <h2 className="heading">Reviews</h2>
             <div className="reviewsCardWrp">
                 <div className="reviewProfile">dgfds</div>
@@ -15,10 +15,10 @@ export default function Reviews() {
                         </div>
                         <div className="arrowbtns">
                             <div>
-                                <AiOutlineArrowLeft />
+                                <AiOutlineArrowLeft className="rightAndLedtWArrowIcons" />
                             </div>
                             <div>
-                                <AiOutlineArrowRight />
+                                <AiOutlineArrowRight className="rightAndLedtWArrowIcons" />
                             </div>
                         </div>
                     </div>
