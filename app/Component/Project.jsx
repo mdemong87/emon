@@ -2,7 +2,8 @@
 export default function Project() {
     return (
         <div className="projctsWrp">
-            <h2 className="heading">Recent Projects</h2>
+            <span className="into">Recent</span>
+            <h2 className="heading">Projects</h2>
             <div className="projectsCardWrp">
                 <div>dgfds</div>
                 <div>dgfds</div>

@@ -60,14 +60,21 @@ a {
 .headerWrper {
   height: 90px;
   display: flex;
-  align-items: center;
-  display: flex;
   justify-content: space-between;
-  /* border: 1px solid black; */
+  align-items: center;
+}
 
+.headerWrper>div {
+  height: 100%;
+  display: flex;
+  align-items: center;
 
 }
 
+.logo {
+  height: 80%;
+  width: 100%;
+}
 
 
 /* hero section */
@@ -77,8 +84,7 @@ a {
   grid-template-areas: "text image";
   grid-template-columns: 1fr 1fr;
   grid-gap: 15px;
-  height: 80vh;
-
+  height: 650px;
 }
 
 .into {
@@ -284,6 +290,7 @@ a {
   box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
   height: 300px;
   border-radius: 5px;
+  background-color: #f7f8f9;
 }
 
 
@@ -432,27 +439,184 @@ a {
 }
 
 
+/* skills componnent css here */
+
+.skillsCardWrp {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 30px;
+}
+
+.skillsCardWrp>div {
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+  height: 120px;
+  border-radius: 5px;
+  background-color: #f7f8f9;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  transition: all .3s;
+}
+
+.skillsCardWrp>div:hover {
+  background: var(--color-primary);
+}
+
+.skillsIcons {
+  font-size: 40px;
+  transition: 1s;
+}
+
+.skillsCardWrp>div>p {
+  transition: .3s;
+  font-weight: 500;
+}
+
+.skillsCardWrp>div:hover .skillsIcons {
+  color: #fff;
+  transform: rotateY(360deg) !important;
+}
+
+.skillsCardWrp>div:hover p {
+  color: #fff;
+}
+
+
+
+.footer {
+  border: 1px solid red;
+  height: 300px;
+  margin-top: 50px;
+}
 
 
 
 
 
 
+@media (max-width:320px) {}
+
+@media (max-width:375px) {
+  .leftAndRightLink {
+    height: 30px !important;
+    width: 30px !important;
+  }
+}
+
+@media (max-width:424px) {
+  .leftBtns {
+    grid-gap: 10px !important;
+  }
+
+  .leftAndRightLink {
+    height: 35px !important;
+    width: 35px !important;
+  }
+
+}
 
 
+@media (max-width:590px) {
+  .doCardWrper {
+    grid-template-columns: 1fr !important;
+  }
+
+  .projectsCardWrp {
+    grid-template-columns: 1fr !important;
+  }
+
+  .skillsCardWrp {
+    grid-template-columns: 1fr 1fr 1fr !important;
+  }
+
+  .reviewsCardWrp {
+    grid-template-rows: 1fr 320px !important;
+  }
 
 
+  .hersbtnsWrp {
+    overflow: hidden;
+  }
 
+  .leftBtnWrp {
+    grid-gap: 5px !important;
+  }
 
+  .leftBtnWrp>p {
+    font-size: 18px;
+  }
 
+  .leftAndRightLink {
+    height: 40px;
+    width: 40px;
+  }
 
+  .leftIcons {
+    font-size: 25px !important;
+  }
 
+  .rightIcons {
+    font-size: 25px !important;
+  }
 
-
+}
 
 
 @media (max-width:768px) {
   .container {
     width: 90%;
+  }
+
+  .reviewsCardWrp {
+    grid-template-rows: 1fr 280px !important;
+  }
+}
+
+@media (max-width:1024px) {
+  .herowrp {
+    height: fit-content;
+    grid-template-areas:
+      "image image"
+      "text text";
+  }
+
+  .hersbtnsWrp {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .doCardWrper {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .projectsCardWrp {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .skillsCardWrp {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  /* review componnetnt start from here */
+
+  .reviewsCardWrp {
+    grid-template-columns: 1fr;
+    grid-gap: 0;
+    grid-template-rows: 1fr 280px;
+  }
+
+  .reviewController {
+    display: none;
+  }
+}
+
+
+@media (min-width:1440px) {
+
+  .container {
+    width: 1200px;
   }
 }
