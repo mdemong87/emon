@@ -6,7 +6,7 @@ import { SiExpress, SiFirebase, SiMongodb, SiNextdotjs, SiTailwindcss } from "re
 
 export default function Skills() {
     return (
-        <div className="projctsWrp">
+        <div id="skill" className="projctsWrp">
             <span className="into">All</span>
             <h2 className="heading">Skills</h2>
             <div className="skillsCardWrp">

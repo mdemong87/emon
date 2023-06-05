@@ -4,7 +4,7 @@ import HeroBtns from "./HeroBtns";
 
 export default function Hero() {
     return (
-        <div className='herowrp'>
+        <div id="home" className='herowrp'>
             <div className="text">
 
                 <span className="into">I will turn your ideas into reality</span>

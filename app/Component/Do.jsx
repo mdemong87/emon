@@ -6,7 +6,7 @@ import DoCard from "./DoCard";
 
 export default function Do() {
     return (
-        <div className="dowrper">
+        <div id="feature" className="dowrper">
             <span className="into">Feature</span>
             <h1 classN className="docardIcon" ame="heading">What I Do</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate numquam blanditiis numquam blanditiis tempora ea alias. Perferendis, dicta nobis? Repudiandae, eaque ullam. tempora ea alias. Perferendis, dicta nobis? Repudiandae, eaque ullam.</p>
