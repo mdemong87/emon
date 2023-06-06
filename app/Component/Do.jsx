@@ -1,3 +1,9 @@
+"use client"
+
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
+import { useEffect } from 'react';
+
 import { AiOutlineAntDesign, AiOutlineAppstore, AiOutlineMobile, AiOutlineRise } from "react-icons/ai";
 import { BiCodeAlt } from "react-icons/bi";
 import { MdOutlineBusinessCenter } from "react-icons/md";
@@ -5,11 +11,16 @@ import DoCard from "./DoCard";
 
 
 export default function Do() {
+
+    useEffect(() => {
+        AOS.init({ duration: 1000 });
+    }, [])
+
     return (
         <div id="feature" className="dowrper">
             <span className="into">Feature</span>
-            <h1 classN className="docardIcon" ame="heading">What I Do</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate numquam blanditiis numquam blanditiis tempora ea alias. Perferendis, dicta nobis? Repudiandae, eaque ullam. tempora ea alias. Perferendis, dicta nobis? Repudiandae, eaque ullam.</p>
+            <h1 className="docardIcon" ame="heading">What I Do</h1>
+            <p data-aos="fade-left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate numquam blanditiis numquam blanditiis tempora ea alias. Perferendis, dicta nobis? Repudiandae, eaque ullam. tempora ea alias. Perferendis, dicta nobis? Repudiandae, eaque ullam.</p>
 
             <div className="doCardWrper">
 

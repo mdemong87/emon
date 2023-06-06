@@ -49,8 +49,6 @@ a {
   text-decoration: none;
 }
 
-
-
 .container {
   width: 80%;
   margin: auto;
@@ -238,14 +236,17 @@ a {
 
 .leftAndRightLink:hover {
   background-color: var(--color-primary);
+  animation: herobtnanimation .3s forwards;
 }
 
 .leftAndRightLink:hover .leftIcons {
   color: #fff !important;
+  animation: herobtnanimation .3s forwards;
 }
 
 .leftAndRightLink:hover .rightIcons {
   color: #fff !important;
+  animation: herobtnanimation .3s forwards;
 }
 
 .leftIcons {
@@ -304,16 +305,34 @@ a {
 
 .doCradwp:hover .docardIcon {
   color: #fff !important;
+  animation: doCardinsideAnimation .2s forwards;
 }
 
 .doCradwp:hover .docardheading {
   color: #fff !important;
+  animation: doCardinsideAnimation .3s forwards;
 }
 
 .doCradwp:hover .docarddis {
   color: #fff !important;
+  animation: doCardinsideAnimation .5s forwards;
 }
 
+.doCradwp:focus {
+  background-color: var(--color-primary);
+}
+
+.doCradwp:focus .docardIcon {
+  color: #fff !important;
+}
+
+.doCradwp:focus .docardheading {
+  color: #fff !important;
+}
+
+.doCradwp:focus .docarddis {
+  color: #fff !important;
+}
 
 /* recent projects */
 .projctsWrp {
@@ -509,6 +528,7 @@ a {
 
 .skillsCardWrp>div:hover {
   background: var(--color-primary);
+  animation: herobtnanimation .3s forwards;
 }
 
 .skillsIcons {
@@ -544,6 +564,74 @@ a {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* animation css start here */
+
+
+/* for do card */
+@keyframes doCardinsideAnimation {
+  from {
+    transform: translateY(15px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(-5px);
+    opacity: 1;
+  }
+}
+
+
+/* for hero btn */
+@keyframes herobtnanimation {
+  from {
+    transform: translateY(13px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(-2px);
+    opacity: 1;
+  }
+}
 
 
 @media (max-width:320px) {}
