@@ -3,7 +3,7 @@ import ReciewSlide from "../Component/ReciewSlide";
 
 
 // import Swiper core and required modules
-import { A11y, Navigation, Pagination } from 'swiper';
+import { A11y, Autoplay, Navigation, Pagination } from 'swiper';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 
@@ -21,12 +21,16 @@ export default function Reviews() {
     return (
         <Swiper
             // install Swiper modules
-            modules={[Navigation, Pagination, A11y]}
+            modules={[Navigation, Pagination, A11y, Autoplay]}
             slidesPerView={1}
             loop={true}
             speed={1100}
-            pagination={{ clickable: true }
-            }
+            pagination={{ clickable: true }}
+            autoplay={{
+                delay: 3000,
+                pauseOnMouseEnter: true,
+                disableOnInteraction: false
+            }}
             onSlideChange={() => console.log('slide change')}
             onSwiper={(swiper) => console.log(swiper)}
         >

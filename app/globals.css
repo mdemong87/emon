@@ -359,6 +359,57 @@ a {
 }
 
 
+
+/* singleProject componnent */
+.SingleProjectWrp {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 10px;
+}
+
+.SingleprojectImage {
+  width: 100%;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.singleprojectDetailseWrper {
+  background: #ebebeb;
+  padding: 20px 20px;
+}
+
+.singleprojectbtnwrp {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.singleprojectbtn {
+  width: 55px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  color: rgb(47, 47, 47);
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+  background-color: #f7f8f9;
+  transition: all .4s;
+}
+
+.singleprojectbtn:hover {
+  color: #fff;
+  background-color: var(--color-primary);
+  animation: herobtnanimation .3s forwards;
+}
+
+
+.singleprojecticons {
+  font-size: 30px !important;
+}
+
 /* reviews section */
 .reviewsCardWrp {
   display: grid;
@@ -490,8 +541,8 @@ a {
 }
 
 .starIcon {
-  color: rgb(214, 214, 4) !important;
-  font-size: 20px !important;
+  color: rgb(201, 164, 0) !important;
+  font-size: 22px !important;
 }
 
 .reviewdetailseInfoditailse {

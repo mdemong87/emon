@@ -1,3 +1,4 @@
+import SingleProject from "./SingleProject"
 
 export default function Project() {
     return (
@@ -5,10 +6,12 @@ export default function Project() {
             <span className="into">Recent</span>
             <h2 className="heading">Projects</h2>
             <div className="projectsCardWrp">
-                <div>dgfds</div>
-                <div>dgfds</div>
-                <div>dgfds</div>
-
+                <SingleProject />
+                <SingleProject />
+                <SingleProject />
+                <SingleProject />
+                <SingleProject />
+                <SingleProject />
             </div>
         </div>
     )
