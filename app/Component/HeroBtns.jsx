@@ -2,9 +2,8 @@
 
 import Link from "next/link";
 import { AiFillFacebook, AiFillGithub, AiFillLinkedin } from "react-icons/ai";
-import { BsBootstrapFill } from "react-icons/bs";
 import { FaReact } from "react-icons/fa";
-import { SiNextdotjs } from "react-icons/si";
+import { SiNextdotjs, SiTailwindcss } from "react-icons/si";
 
 
 import AOS from 'aos';
@@ -38,7 +37,7 @@ export default function HeroBtns() {
                 <p>BEST SKILL ON</p>
                 <div className="leftBtns">
                     <Link data-aos="fade-left" data-aos-offset="0" href={'/'} className="leftAndRightLink">
-                        <BsBootstrapFill className="rightIcons" />
+                        <SiTailwindcss className="rightIcons" />
                     </Link>
                     <Link data-aos="fade-left" data-aos-offset="0" href={'/'} className="leftAndRightLink">
                         <FaReact className="rightIcons" />
