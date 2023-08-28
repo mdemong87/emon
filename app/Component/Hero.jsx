@@ -12,7 +12,7 @@ export default function Hero() {
                 <div className="info">
                     <h3>Hi,</h3>
                     <h1>I'm Md Emon Hossen</h1>
-                    <h2>Front-End Engineer</h2>
+                    <h2>Frontend Developer</h2>
 
                     <p>I am a Full Stack Software Developer, I provides Web & Mobile App Development services and complete technical solutions for businesses of any size and nature, My services has helped startups, companies and individuals all around the globe.</p>
                 </div>
