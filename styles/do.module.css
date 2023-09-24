@@ -3,14 +3,22 @@
     transform: translateY(110px);
 }
 
-.dowrper>h1 {
+.into {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    word-spacing: 2px;
+    font-size: 18px;
+    color: var(--color-primary);
+}
+
+.heading {
     color: var(--textPrimary);
     font-size: 44px;
     margin-bottom: 15px;
 }
 
-.dowrper>p {
-    font-size: 21px;
+.para {
+    font-size: 23px;
     color: var(--textSecondary);
 }
 
@@ -25,4 +33,51 @@
     color: var(--color-primary) !important;
     font-size: 44px !important;
     margin-bottom: 15px !important;
+}
+
+
+
+
+@media (max-width:900px) {
+
+    .doCardWrper {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
+
+
+@media (max-width:590px) {
+
+    .into {
+        font-size: 16px;
+    }
+
+    .heading {
+        font-size: 35.5px;
+    }
+
+    .para {
+        font-size: 20px;
+    }
+
+    .doCardWrper {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width:424px) {
+
+    .into {
+        font-size: 15px;
+    }
+
+    .heading {
+        font-size: 30px;
+    }
+
+    .para {
+        font-size: 18px;
+    }
 }

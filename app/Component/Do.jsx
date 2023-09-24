@@ -19,8 +19,8 @@ export default function Do() {
     return (
         <div id="do" className={styles.dowrper}>
             <span className={styles.into}>Feature</span>
-            <h1>What I Do</h1>
-            <p data-aos="fade-left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate numquam blanditiis numquam blanditiis tempora ea alias. Perferendis, dicta nobis? Repudiandae, eaque ullam. tempora ea alias. Perferendis, dicta nobis? Repudiandae, eaque ullam.</p>
+            <h1 className={styles.heading}>What I Do</h1>
+            <p className={styles.para} data-aos="fade-left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate numquam blanditiis numquam blanditiis tempora ea alias. Perferendis, dicta nobis? Repudiandae, eaque ullam. tempora ea alias. Perferendis, dicta nobis? Repudiandae, eaque ullam.</p>
 
             <div className={styles.doCardWrper}>
 

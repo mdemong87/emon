@@ -17,7 +17,6 @@ export default function Header() {
         <div className={styles.headerContainer}>
           <div className={styles.logoWrper}>
             {/* <Image className={styles.logo} src={logo} /> */}
-            <CgMenuRight className={styles.logoIcon} />
             <h4 className={styles.logoText}>Emon</h4>
           </div>
           <div className={styles.mobonav}>

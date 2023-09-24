@@ -14,7 +14,10 @@
 }
 
 .leftBtnWrp>p {
-    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    word-spacing: 2px;
+    font-size: 19px;
     color: var(--textPrimary);
 }
 
@@ -23,12 +26,12 @@
     justify-content: center;
     align-items: center;
     width: fit-content;
-    grid-gap: 15px;
+    grid-gap: 16px;
 }
 
 .leftAndRightLink {
-    width: 55px;
-    height: 55px;
+    width: 50px;
+    height: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -77,5 +80,89 @@
     to {
         transform: translateY(-2px);
         opacity: 1;
+    }
+}
+
+
+
+
+
+
+
+@media (max-width:1024px) {
+    .hersbtnsWrp {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 50px;
+
+    }
+
+
+}
+
+
+
+@media (max-width:768px) {
+    .hersbtnsWrp {
+        margin-top: 40px;
+    }
+}
+
+
+
+@media (max-width:590px) {
+
+    .leftBtnWrp>p {
+        font-size: 17px;
+    }
+
+    .leftBtnWrp {
+        grid-gap: 5px !important;
+    }
+
+    .leftBtnWrp>p {
+        font-size: 18px;
+    }
+
+    .leftAndRightLink {
+        height: 40px;
+        width: 40px;
+    }
+
+    .leftIcons {
+        font-size: 25px !important;
+    }
+
+    .rightIcons {
+        font-size: 25px !important;
+    }
+
+}
+
+@media (max-width:424px) {
+
+    .leftBtnWrp>p {
+        font-size: 16px;
+    }
+
+    .hersbtnsWrp {
+        margin-top: 34px;
+    }
+
+    .leftBtns {
+        grid-gap: 10px !important;
+    }
+
+    .leftAndRightLink {
+        height: 35px !important;
+        width: 35px !important;
+    }
+
+}
+
+@media (max-width:375px) {
+    .leftAndRightLink {
+        height: 30px !important;
+        width: 30px !important;
     }
 }
