@@ -3,6 +3,7 @@
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // You can also use <link> for styles
 import { useEffect } from 'react';
+import styles from "../../styles/doCard.module.css";
 
 
 export default function DoCard({ icon, heading, discription }) {
@@ -14,10 +15,10 @@ export default function DoCard({ icon, heading, discription }) {
 
     return (
         <div data-aos="fade-up"
-            data-aos-anchor-placement="bottom-bottom" className="doCradwp">
+            data-aos-anchor-placement="bottom-bottom" className={styles.doCradwp}>
             <h1>{icon}</h1>
-            <h1 className="docardheading">{heading}</h1>
-            <p className="docarddis">{discription}</p>
+            <h1 className={styles.docardheading}>{heading}</h1>
+            <p className={styles.docarddis}>{discription}</p>
         </div>
     )
 }

@@ -1,0 +1,56 @@
+/* singleProject componnent */
+.SingleProjectWrp {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+}
+
+.SingleprojectImage {
+    width: 100%;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+.singleprojectDetailseWrper {
+    background: var(--bgsecondary);
+    padding: 20px 20px;
+    color: var(--textPrimary);
+}
+
+.singleprojectDetailseWrper>p {
+    color: var(--bgtoptext);
+    font-size: 19px;
+    padding-top: 8px;
+}
+
+.singleprojectbtnwrp {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.singleprojectbtn {
+    width: 55px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    color: rgb(47, 47, 47);
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+    background-color: var(--bgtoptext);
+    transition: all .4s;
+}
+
+.singleprojectbtn:hover {
+    color: #fff;
+    background-color: var(--color-primary);
+    animation: herobtnanimation .3s forwards;
+}
+
+
+.singleprojecticons {
+    font-size: 30px !important;
+}

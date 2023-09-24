@@ -1,0 +1,28 @@
+/* what i do section */
+.dowrper {
+    transform: translateY(110px);
+}
+
+.dowrper>h1 {
+    color: var(--textPrimary);
+    font-size: 44px;
+    margin-bottom: 15px;
+}
+
+.dowrper>p {
+    font-size: 21px;
+    color: var(--textSecondary);
+}
+
+.doCardWrper {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 30px;
+}
+
+.docardIcon {
+    color: var(--color-primary) !important;
+    font-size: 44px !important;
+    margin-bottom: 15px !important;
+}

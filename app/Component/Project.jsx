@@ -1,11 +1,12 @@
-import SingleProject from "./SingleProject"
+import styles from "../../styles/project.module.css";
+import SingleProject from "./SingleProject";
 
 export default function Project() {
     return (
-        <div id="portfolio" className="projctsWrp">
-            <span className="into">Recent</span>
-            <h2 className="heading">Projects</h2>
-            <div className="projectsCardWrp">
+        <div id="portfolio" className={styles.projctsWrp}>
+            <span className={styles.into}>Recent</span>
+            <h2 className={styles.heading}>Projects</h2>
+            <div className={styles.projectsCardWrp}>
                 <SingleProject />
                 <SingleProject />
                 <SingleProject />

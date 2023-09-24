@@ -1,15 +1,16 @@
 import Image from "next/image";
 import img from "../../public/IMG_20230331_055847.jpeg";
+import styles from "../../styles/hero.module.css";
 import HeroBtns from "./HeroBtns";
 
 export default function Hero() {
     return (
-        <div id="home" className='herowrp'>
-            <div className="text">
+        <div id="home" className={styles.herowrp}>
+            <div className={styles.text}>
 
-                <span className="into">I will turn your ideas into reality</span>
+                <span className={styles.into}>I will turn your ideas into reality</span>
 
-                <div className="info">
+                <div className={styles.info}>
                     <h3>Hi,</h3>
                     <h1>I'm Md Emon Hossen</h1>
                     <h2>Frontend Developer</h2>
@@ -22,10 +23,10 @@ export default function Hero() {
                 <HeroBtns />
 
             </div>
-            <div className="image">
-                <div className="heroImageWrper">
-                    <div className="secheroImageWrp">
-                        <Image className="img" src={img} />
+            <div className={styles.image}>
+                <div className={styles.heroImageWrper}>
+                    <div className={styles.secheroImageWrp}>
+                        <Image className={styles.img} src={img} />
                     </div>
                 </div>
             </div>

@@ -1,0 +1,67 @@
+/* skills componnent css here */
+
+.skillsCardWrp {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 30px;
+}
+
+.skillsCardWrp>div {
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+    height: 120px;
+    border-radius: 5px;
+    background-color: var(--bgsecondary);
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+    transition: all .3s;
+}
+
+.skillsCardWrp>div:hover {
+    background: var(--color-primary);
+    animation: herobtnanimation .3s forwards;
+}
+
+.skillsIcons {
+    font-size: 40px;
+    transition: 1s;
+    color: var(--textPrimary);
+}
+
+.skillsCardWrp>div>p {
+    transition: .3s;
+    font-weight: 500;
+    color: var(--textPrimary);
+}
+
+.skillsCardWrp>div:hover .skillsIcons {
+    color: #fff;
+    transform: rotateY(360deg) !important;
+}
+
+.skillsCardWrp>div:hover p {
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+@media (max-width:1024px) {
+    .skillsCardWrp {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+
+@media (max-width:590px) {
+    .skillsCardWrp {
+        grid-template-columns: 1fr 1fr 1fr !important;
+    }
+}

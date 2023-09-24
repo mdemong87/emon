@@ -1,0 +1,66 @@
+/*do card component*/
+.doCradwp {
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+    height: 300px;
+    border-radius: 5px;
+    background-color: var(--bgsecondary);
+    padding: 30px;
+    transition: all .3s;
+    cursor: pointer;
+    color: var(--textPrimary);
+}
+
+.docardheading {
+    margin-bottom: 15px !important;
+}
+
+.doCradwp:hover {
+    background-color: var(--color-primary);
+}
+
+.doCradwp:hover .docardIcon {
+    color: #fff !important;
+    animation: doCardinsideAnimation .2s forwards;
+}
+
+.doCradwp:hover .docardheading {
+    color: #fff !important;
+    animation: doCardinsideAnimation .3s forwards;
+}
+
+.doCradwp:hover .docarddis {
+    color: #fff !important;
+    animation: doCardinsideAnimation .5s forwards;
+}
+
+.doCradwp:focus {
+    background-color: var(--color-primary);
+}
+
+.doCradwp:focus .docardIcon {
+    color: #fff !important;
+}
+
+.doCradwp:focus .docardheading {
+    color: #fff !important;
+}
+
+.doCradwp:focus .docarddis {
+    color: #fff !important;
+}
+
+
+
+
+/* for do card */
+@keyframes doCardinsideAnimation {
+    from {
+        transform: translateY(15px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(-5px);
+        opacity: 1;
+    }
+}
