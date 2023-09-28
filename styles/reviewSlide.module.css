@@ -1,4 +1,8 @@
-/* reviews section */
+.reviews {
+    transform: translateY(100px);
+    margin-bottom: 140px !important;
+}
+
 .reviewsCardWrp {
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -148,12 +152,6 @@
     color: var(--bgtoptext);
 }
 
-
-
-
-.swiper-pagination-bullet-active {
-    background-color: var(--color-primary) !important;
-}
 
 
 

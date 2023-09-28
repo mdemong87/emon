@@ -1,10 +1,14 @@
-/* skills componnent css here */
+.SkillWrp {
+    transform: translateY(100px);
+    margin-bottom: 80px;
+}
 
 .skillsCardWrp {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: 30px;
 }
+
 
 .skillsCardWrp>div {
     box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
@@ -46,22 +50,8 @@
     color: #fff;
 }
 
-
-
-
-
-
-
-
-@media (max-width:1024px) {
+@media (max-width:768px) {
     .skillsCardWrp {
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-    }
-}
-
-
-@media (max-width:590px) {
-    .skillsCardWrp {
-        grid-template-columns: 1fr 1fr 1fr !important;
+        grid-template-columns: 1fr 1fr !important;
     }
 }

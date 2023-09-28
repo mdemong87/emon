@@ -17,9 +17,9 @@ export default function Do() {
     }, [])
 
     return (
-        <div id="do" className={styles.dowrper}>
-            <span className={styles.into}>Feature</span>
-            <h1 className={styles.heading}>What I Do</h1>
+        <section id="do" className={styles.dowrper}>
+            <span className="into">Feature</span>
+            <h1 className="heading">What I Do</h1>
             <p className={styles.para} data-aos="fade-left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate numquam blanditiis numquam blanditiis tempora ea alias. Perferendis, dicta nobis? Repudiandae, eaque ullam. tempora ea alias. Perferendis, dicta nobis? Repudiandae, eaque ullam.</p>
 
             <div className={styles.doCardWrper}>
@@ -37,6 +37,6 @@ export default function Do() {
                 <DoCard icon={<BiCodeAlt className={styles.docardIcon} />} heading={"Software Maintenance"} discription={"Beside software development services, I also provide life time (charged) bug fixes and maintenance services (Only for the projects that are developed by me or my team."} />
 
             </div>
-        </div>
+        </section>
     )
 }

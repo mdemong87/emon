@@ -5,7 +5,7 @@ import HeroBtns from "./HeroBtns";
 
 export default function Hero() {
     return (
-        <div id="home" className={styles.herowrp}>
+        <section id="home" className={styles.herowrp}>
             <div className={styles.text}>
 
                 <span className={styles.into}>I will turn your ideas into reality</span>
@@ -30,7 +30,7 @@ export default function Hero() {
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
 
     )
 }

@@ -3,9 +3,9 @@ import SingleProject from "./SingleProject";
 
 export default function Project() {
     return (
-        <div id="portfolio" className={styles.projctsWrp}>
-            <span className={styles.into}>Recent</span>
-            <h2 className={styles.heading}>Projects</h2>
+        <section id="portfolio" className={styles.projctsWrp}>
+            <span className="into">Recent</span>
+            <h2 className="heading">Projects</h2>
             <div className={styles.projectsCardWrp}>
                 <SingleProject />
                 <SingleProject />
@@ -14,6 +14,6 @@ export default function Project() {
                 <SingleProject />
                 <SingleProject />
             </div>
-        </div>
+        </section>
     )
 }

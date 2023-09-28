@@ -1,9 +1,11 @@
 
 "use client"
+import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import { CgMenuRight } from "react-icons/cg";
 import { RxCross2 } from "react-icons/rx";
+import logo from "../../public/logo.png";
 import styles from "../../styles/header.module.css";
 import Container from "./Container";
 
@@ -12,12 +14,11 @@ export default function Header() {
   const [isoepn, setisopen] = useState(false);
 
   return (
-    <div className={styles.headerWrper}>
+    <header className={styles.headerWrper}>
       <Container>
         <div className={styles.headerContainer}>
           <div className={styles.logoWrper}>
-            {/* <Image className={styles.logo} src={logo} /> */}
-            <h4 className={styles.logoText}>Emon</h4>
+            <Image width={500} height={500} className={styles.logo} src={logo} />
           </div>
           <div className={styles.mobonav}>
             {/* */}
@@ -41,6 +42,6 @@ export default function Header() {
           </div>
         </div>
       </Container >
-    </div >
+    </header >
   )
 }

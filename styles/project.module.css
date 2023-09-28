@@ -1,6 +1,7 @@
 /* recent projects */
 .projctsWrp {
-    margin-top: 60px;
+    transform: translateY(100px);
+    margin-bottom: 80px !important;
 }
 
 .heading {
@@ -9,15 +10,46 @@
     margin-top: 10px;
 }
 
-.projectsCardWrp {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 30px;
-}
-
 .projectsCardWrp>div {
     box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
     height: 300px;
     border-radius: 5px;
     background-color: var(--bgsecondary);
+}
+
+
+
+.projectsCardWrp {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 30px;
+}
+
+.docardIcon {
+    color: var(--color-primary) !important;
+    font-size: 44px !important;
+    margin-bottom: 15px !important;
+}
+
+
+
+
+@media (max-width:900px) {
+
+    .projectsCardWrp {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
+
+
+@media (max-width:590px) {
+
+
+
+    .projectsCardWrp {
+        grid-template-columns: 1fr;
+    }
 }

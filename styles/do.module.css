@@ -1,21 +1,9 @@
 /* what i do section */
 .dowrper {
-    transform: translateY(110px);
+    transform: translateY(100px);
+    margin-bottom: 80px;
 }
 
-.into {
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    word-spacing: 2px;
-    font-size: 18px;
-    color: var(--color-primary);
-}
-
-.heading {
-    color: var(--textPrimary);
-    font-size: 44px;
-    margin-bottom: 15px;
-}
 
 .para {
     font-size: 23px;
@@ -50,13 +38,6 @@
 
 @media (max-width:590px) {
 
-    .into {
-        font-size: 16px;
-    }
-
-    .heading {
-        font-size: 35.5px;
-    }
 
     .para {
         font-size: 20px;
@@ -69,13 +50,6 @@
 
 @media (max-width:424px) {
 
-    .into {
-        font-size: 15px;
-    }
-
-    .heading {
-        font-size: 30px;
-    }
 
     .para {
         font-size: 18px;

@@ -20,11 +20,11 @@ export default function ReciewSlide() {
     }, [])
 
     return (
-        <div id="reviews" className={styles.projctsWrp}>
-            <span className={styles.into}>What Client Say</span>
-            <h2 className={styles.heading}>Reviews</h2>
+        <div id="reviews">
+            <span className="into">What Client Say</span>
+            <h2 className="heading">Reviews</h2>
             <div className={styles.reviewsCardWrp}>
-                <div data-aos="flip-left" className={styles.reviewsCardWrp}>
+                <div data-aos="flip-left" className={styles.reviewProfile}>
                     <div className={styles.reviewProfilePhoto}>
                         <FaUserAlt className={styles.reviewProfileIcon} />
                     </div>
@@ -38,7 +38,7 @@ export default function ReciewSlide() {
                         <div className={styles.cutaep}>
                             <IoMdQuote className={styles.quoteIcon} />
                         </div>
-                        <div className={styles.v}>
+                        <div className={styles.arrowbtns}>
                             <div data-aos="fade-right" onClick={() => swiper.slidePrev()}>
                                 <AiOutlineArrowLeft className={styles.rightAndLedtWArrowIcons} />
                             </div>
