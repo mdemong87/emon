@@ -26,7 +26,7 @@ export default function Hero() {
             <div className={styles.image}>
                 <div className={styles.heroImageWrper}>
                     <div className={styles.secheroImageWrp}>
-                        <Image className={styles.img} src={img} />
+                        <Image className={styles.img} src={img} alt="Developer-photo" />
                     </div>
                 </div>
             </div>

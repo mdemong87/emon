@@ -73,6 +73,7 @@
 
 .img {
     width: 100%;
+    aspect-ratio: 1/16;
     height: 100%;
     border: 1px solid rgb(164, 164, 164);
     filter: grayscale(80%);

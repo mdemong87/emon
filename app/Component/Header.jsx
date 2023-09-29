@@ -29,7 +29,7 @@ export default function Header() {
                 </div>
                 <div className={styles.linkWrp}>
                   <Link onClick={() => setisopen(!isoepn)} className={styles.link} href="#home">Home</Link >
-                  <Link onClick={() => setisopen(!isoepn)} className={styles.link} href="#do">Feature</Link >
+                  <Link onClick={() => setisopen(!isoepn)} className={styles.link} href="#feature">Feature</Link >
                   <Link onClick={() => setisopen(!isoepn)} className={styles.link} href="#skill">Skills</Link >
                   <Link onClick={() => setisopen(!isoepn)} className={styles.link} href="#portfolio">Portfolio</Link >
                   <Link onClick={() => setisopen(!isoepn)} className={styles.link} href="#reviews">Reviews</Link >

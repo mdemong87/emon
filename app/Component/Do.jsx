@@ -17,7 +17,7 @@ export default function Do() {
     }, [])
 
     return (
-        <section id="do" className={styles.dowrper}>
+        <section id="feature" className={styles.dowrper}>
             <span className="into">Feature</span>
             <h1 className="heading">What I Do</h1>
             <p className={styles.para} data-aos="fade-left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate numquam blanditiis numquam blanditiis tempora ea alias. Perferendis, dicta nobis? Repudiandae, eaque ullam. tempora ea alias. Perferendis, dicta nobis? Repudiandae, eaque ullam.</p>
