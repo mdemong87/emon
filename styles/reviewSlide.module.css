@@ -194,3 +194,10 @@
         grid-template-rows: 400px 450px;
     }
 }
+
+@media (max-width:450px) {
+    .reviewsCardWrp {
+        grid-template-rows: 400px 480px;
+        padding-bottom: 50px;
+    }
+}
