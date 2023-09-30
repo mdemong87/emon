@@ -3,8 +3,8 @@
   --textPrimary: #ddd;
   --textSecondary: rgb(113, 113, 113);
   --bgtoptext: rgb(147, 147, 147);
-  --bgPrimary: black;
-  --bgsecondary: rgb(34, 34, 34);
+  --bgPrimary: #0f131a;
+  --bgsecondary: #1d232f;
 }
 
 
@@ -74,7 +74,7 @@ a {
 
 
 .swiper-pagination-bullet {
-  background: var(--bgPrimary) !important;
+  background: var(--bgtoptext) !important;
 }
 
 .swiper-pagination-bullet-active {

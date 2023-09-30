@@ -1,5 +1,5 @@
 
-import { Roboto } from 'next/font/google';
+import { Poppins } from 'next/font/google';
 import Container from './Component/Container';
 import Footer from './Component/Footer';
 import Header from './Component/Header';
@@ -9,7 +9,7 @@ import './globals.css';
 
 
 
-const roboto = Roboto({
+const poppins = Poppins({
   weight: '400',
   subsets: ['latin'],
 });
@@ -26,7 +26,7 @@ export default function RootLayout({ children }) {
 
   return (
     <html lang="en">
-      <body className={roboto.className}>
+      <body className={poppins.className}>
         <SmoothScroll />
         <Header />
         <Container>

@@ -30,11 +30,11 @@ export default function Do() {
 
                 <DoCard icon={<AiOutlineAntDesign className={styles.docardIcon} />} heading={"UI Designs"} discription={"With the help of my amazing freelance partners, I provide eye catching Web and Mobile App UI / UX Designs"} />
 
-                <DoCard icon={<MdOutlineBusinessCenter className={styles.docardIcon} />} heading={"Business Experience"} discription={"I have been managing my own SAAS products and experience I gained from my own startups helps me to develop better and scalable softwares and to implement better business logic for my clients."} />
+                <DoCard icon={<MdOutlineBusinessCenter className={styles.docardIcon} />} heading={"Business Experience"} discription={"I have been managing my own SAAS products and experience I gained from my own."} />
 
-                <DoCard icon={<AiOutlineRise className={styles.docardIcon} />} heading={"Strategy & Planning"} discription={"In freelance industry, I often meet individuals having no or least technical knowledge, I provide them with the best possible approach and business logic of the software they need with in their budget."} />
+                <DoCard icon={<AiOutlineRise className={styles.docardIcon} />} heading={"Strategy & Planning"} discription={"In freelance industry,no or least technical knowledge, I provide them with the best possible approach and business."} />
 
-                <DoCard icon={<BiCodeAlt className={styles.docardIcon} />} heading={"Software Maintenance"} discription={"Beside software development services, I also provide life time (charged) bug fixes and maintenance services (Only for the projects that are developed by me or my team."} />
+                <DoCard icon={<BiCodeAlt className={styles.docardIcon} />} heading={"Software Maintenance"} discription={"Beside software development services, I also provide life time (charged) my team."} />
 
             </div>
         </section>

@@ -7,6 +7,8 @@
     display: grid;
     grid-template-columns: 1fr 2fr;
     grid-gap: 30px;
+    height: fit-content !important;
+    padding-bottom: 50px;
 }
 
 .reviewProfile {
@@ -18,6 +20,7 @@
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 100px;
+    height: 100%;
 }
 
 .reviewProfilePhoto {
@@ -110,6 +113,7 @@
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
     padding: 20px 0;
+    height: fit-content;
 }
 
 .reviewdetailseInfoheading {
@@ -162,12 +166,16 @@
     .reviewsCardWrp {
         grid-template-columns: 1fr;
         grid-gap: 0;
-        grid-template-rows: 1fr 280px;
+        grid-template-rows: 450px 320px;
+        padding-bottom: 0px;
     }
+
 
     .reviewController {
         display: none;
     }
+
+
 
 
 
@@ -176,18 +184,13 @@
 
 @media (max-width:768px) {
     .reviewsCardWrp {
-        grid-template-rows: 1fr 280px !important;
+        grid-template-rows: 400px 350px;
     }
-
-
 }
 
 
 @media (max-width:590px) {
-
     .reviewsCardWrp {
-        grid-template-rows: 1fr 320px !important;
+        grid-template-rows: 400px 450px;
     }
-
-
 }

@@ -38,7 +38,7 @@
 .skillsCardWrp>div>p {
     transition: .3s;
     font-weight: 500;
-    color: var(--textPrimary);
+    color: var(--bgtoptext);
 }
 
 .skillsCardWrp>div:hover .skillsIcons {

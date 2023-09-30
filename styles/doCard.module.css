@@ -7,11 +7,18 @@
     padding: 30px;
     transition: all .3s;
     cursor: pointer;
+    overflow-y: hidden;
     color: var(--textPrimary);
+    padding-bottom: 30px !important;
 }
+
 
 .docardheading {
     margin-bottom: 15px !important;
+}
+
+.docarddis {
+    color: var(--bgtoptext) !important;
 }
 
 .doCradwp:hover {
