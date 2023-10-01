@@ -1,0 +1,43 @@
+.contact {
+    transform: translateY(100px);
+    margin-bottom: 120px;
+}
+
+.contactWrp {
+    display: grid;
+    grid-template-columns: 1fr 60px 1fr;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.contactWrp>div {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    background: var(--bgsecondary);
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+}
+
+.orWrp {
+    background: var(--bgPrimary) !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-primary);
+}
+
+.orWrp>h1 {
+    font-size: 26px;
+    font-weight: 600;
+}
+
+
+
+@media (max-width:900px) {
+
+    .contactWrp {
+        grid-template-columns: 1fr;
+    }
+
+}

@@ -1,0 +1,55 @@
+.MassegeSendWrp {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+
+}
+
+
+.MassegeSendWrp>input {
+    padding: 15px;
+    background: var(--bgPrimary);
+    outline: none;
+    border: none;
+    color: var(--bgtoptext);
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 7px;
+}
+
+.MassegeSendWrp>textarea {
+    padding: 15px;
+    background: var(--bgPrimary);
+    outline: none;
+    border: none;
+    color: var(--bgtoptext);
+    font-size: 17px;
+    height: 150px;
+    font-weight: 500;
+    border-radius: 7px;
+    resize: none;
+}
+
+
+.btnWrp {
+    width: 100%;
+}
+
+.sendBtn {
+    background: var(--color-primary);
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+    border-radius: 7px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+}

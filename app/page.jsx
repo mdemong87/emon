@@ -1,3 +1,4 @@
+import Contact from "./Component/Contact";
 import Do from './Component/Do';
 import Hero from './Component/Hero';
 import Project from './Component/Project';
@@ -13,6 +14,7 @@ export default function Home() {
       <Skills />
       <Project />
       <Reviews />
+      <Contact />
     </main>
   )
 }
