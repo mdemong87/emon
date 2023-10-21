@@ -1,6 +1,6 @@
 "use client"
-import styles from "../../styles/reviewSlide.module.css";
-import ReciewSlide from "../Component/ReciewSlide";
+import styles from "../styles/reviewSlide.module.css";
+import ReciewSlide from "./ReciewSlide";
 
 // import Swiper core and required modules
 import { A11y, Autoplay, Navigation, Pagination } from 'swiper';
@@ -32,8 +32,6 @@ export default function Reviews() {
                     pauseOnMouseEnter: true,
                     disableOnInteraction: false
                 }}
-                onSlideChange={() => console.log('slide change')}
-                onSwiper={(swiper) => console.log(swiper)}
             >
                 <SwiperSlide>
                     <ReciewSlide />

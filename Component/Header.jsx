@@ -1,6 +1,6 @@
 import Image from "next/image";
-import logo from "../../public/logo.png";
-import styles from "../../styles/header.module.css";
+import logo from "../public/logo.png";
+import styles from "../styles/header.module.css";
 import Container from "./Container";
 import Navber from "./Navber";
 

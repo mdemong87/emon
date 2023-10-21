@@ -1,6 +1,6 @@
 import Image from "next/image";
-import img from "../../public/IMG_20230331_055847.jpeg";
-import styles from "../../styles/hero.module.css";
+import img from "../public/IMG_20230331_055847.jpeg";
+import styles from "../styles/hero.module.css";
 import HeroBtns from "./HeroBtns";
 
 export default function Hero() {

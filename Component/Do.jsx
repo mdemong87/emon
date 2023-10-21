@@ -6,7 +6,7 @@ import { useEffect } from 'react';
 import { AiOutlineAntDesign, AiOutlineAppstore, AiOutlineMobile, AiOutlineRise } from "react-icons/ai";
 import { BiCodeAlt } from "react-icons/bi";
 import { MdOutlineBusinessCenter } from "react-icons/md";
-import styles from "../../styles/do.module.css";
+import styles from "../styles/do.module.css";
 import DoCard from "./DoCard";
 
 

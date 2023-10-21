@@ -1,4 +1,4 @@
-import styles from "../../styles/project.module.css";
+import styles from "../styles/project.module.css";
 import SingleProject from "./SingleProject";
 
 export default function Project() {
@@ -7,9 +7,6 @@ export default function Project() {
             <span className="into">Recent</span>
             <h2 className="heading">Projects</h2>
             <div className={styles.projectsCardWrp}>
-                <SingleProject />
-                <SingleProject />
-                <SingleProject />
                 <SingleProject />
                 <SingleProject />
                 <SingleProject />

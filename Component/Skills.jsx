@@ -6,7 +6,7 @@ import { useEffect } from 'react';
 import { AiFillGithub } from "react-icons/ai";
 import { FaBootstrap, FaReact } from "react-icons/fa";
 import { SiExpress, SiFirebase, SiMongodb, SiNextdotjs, SiTailwindcss } from "react-icons/si";
-import styles from "../../styles/skill.module.css";
+import styles from "../styles/skill.module.css";
 
 
 export default function Skills() {

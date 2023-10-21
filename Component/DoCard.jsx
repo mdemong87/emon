@@ -3,7 +3,7 @@
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // You can also use <link> for styles
 import { useEffect } from 'react';
-import styles from "../../styles/doCard.module.css";
+import styles from "../styles/doCard.module.css";
 
 
 export default function DoCard({ icon, heading, discription }) {

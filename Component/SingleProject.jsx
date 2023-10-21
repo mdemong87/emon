@@ -5,7 +5,7 @@ import 'aos/dist/aos.css'; // You can also use <link> for styles
 import Link from "next/link";
 import { useEffect } from 'react';
 import { AiOutlineArrowRight } from "react-icons/ai";
-import styles from "../../styles/singleProject.module.css";
+import styles from "../styles/singleProject.module.css";
 
 
 export default function SingleProject() {

@@ -3,7 +3,7 @@
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // You can also use <link> for styles
 import { useEffect } from 'react';
-import styles from "../../styles/reviewSlide.module.css";
+import styles from "../styles/reviewSlide.module.css";
 
 import { AiFillStar, AiOutlineArrowLeft, AiOutlineArrowRight } from "react-icons/ai";
 import { FaUserAlt } from "react-icons/fa";

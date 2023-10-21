@@ -4,7 +4,7 @@ import Link from "next/link";
 import { AiFillFacebook, AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 import { FaReact } from "react-icons/fa";
 import { SiNextdotjs, SiTailwindcss } from "react-icons/si";
-import styles from "../../styles/herobtn.module.css";
+import styles from "../styles/herobtn.module.css";
 
 
 import AOS from 'aos';

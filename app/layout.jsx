@@ -1,12 +1,9 @@
-
 import { Poppins } from 'next/font/google';
-import Container from './Component/Container';
-import Footer from './Component/Footer';
-import Header from './Component/Header';
-import SmoothScroll from './Component/SmoothScroll';
+import Container from '../Component/Container';
+import Footer from '../Component/Footer';
+import Header from '../Component/Header';
+import SmoothScroll from '../Component/SmoothScroll';
 import './globals.css';
-
-
 
 
 const poppins = Poppins({

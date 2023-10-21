@@ -1,8 +1,9 @@
-import styles from "../../styles/Contact.module.css";
+import styles from "../styles/Contact.module.css";
 import MassegeSend from "./MassegeSend";
 
 
 export default function Contact() {
+
     return (
         <section id='contact' className={styles.contact}>
             <div>
