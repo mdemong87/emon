@@ -20,7 +20,9 @@ export default function Do() {
         <section id="feature" className={styles.dowrper}>
             <span className="into">Feature</span>
             <h1 className="heading">What I Do</h1>
-            <p className={styles.para} data-aos="fade-left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate numquam blanditiis numquam blanditiis tempora ea alias. Perferendis, dicta nobis? Repudiandae, eaque ullam. tempora ea alias. Perferendis, dicta nobis? Repudiandae, eaque ullam.</p>
+            <p className={styles.para} data-aos="fade-left">
+                Dedicated front-end engineer with a passion for crafting intuitive user interfaces. Specializing in clean, efficient code, I bring creativity and precision to deliver seamless and engaging web experiences for users.
+            </p>
 
             <div className={styles.doCardWrper}>
 

@@ -3,7 +3,7 @@
   --textPrimary: #ddd;
   --textSecondary: rgb(113, 113, 113);
   --bgtoptext: rgb(147, 147, 147);
-  --bgPrimary: #0f131a;
+  --bgPrimary: #12191c;
   --bgsecondary: #1d232f;
 }
 
@@ -44,7 +44,7 @@ body {
   user-select: none;
   -webkit-user-select: none;
   -ms-user-select: none;
-  background: linear-gradient(to left, var(--bgPrimary), #29562c, var(--bgPrimary));
+  background: var(--bgPrimary);
 }
 
 a {

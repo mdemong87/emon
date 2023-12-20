@@ -13,9 +13,11 @@ export default function Hero() {
                 <div className={styles.info}>
                     <h3>Hi,</h3>
                     <h1>I'm Md Emon Hossen</h1>
-                    <h2>Frontend Developer</h2>
+                    <h2>Frontend Engineer</h2>
 
-                    <p>I am a Full Stack Software Developer, I provides Web & Mobile App Development services and complete technical solutions for businesses of any size and nature, My services has helped startups, companies and individuals all around the globe.</p>
+                    <p>
+                    I have a passion for building beautiful, responsive, and user-friendly websites that provide an exceptional user experience.I enjoy keeping up-to-date with the latest web development trends and technologies and continuously strive to improve my skills and knowledge.
+                    </p>
                 </div>
 
 
@@ -25,9 +27,9 @@ export default function Hero() {
             </div>
             <div className={styles.image}>
                 <div className={styles.heroImageWrper}>
-                    <div className={styles.secheroImageWrp}>
-                        <Image className={styles.img} src={img} alt="Developer-photo" />
-                    </div>
+                        <div className={styles.secheroImageWrp}>
+                            <Image className={styles.img} src={img} alt="Developer-photo" />
+                        </div>
                 </div>
             </div>
         </section>

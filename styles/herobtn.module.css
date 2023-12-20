@@ -38,11 +38,12 @@
     border-radius: 5px;
     box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
     background-color: var(--textPrimary);
+    background: linear-gradient(180deg,  #fff,#969696);
     transition: all .4s;
 }
 
 .leftAndRightLink:hover {
-    background-color: var(--color-primary);
+    background: linear-gradient(180deg, var(--color-primary),var(--color-primary));
     animation: herobtnanimation .3s forwards;
 }
 
@@ -96,7 +97,9 @@
         margin-top: 50px;
 
     }
-
+.leftPlusRightbtnP{
+    text-align: right;
+}
 
 }
 
@@ -111,6 +114,13 @@
 
 
 @media (max-width:590px) {
+
+    .hersbtnsWrp{
+        gap: 10px!important;
+    }
+    .hersbtnsWrp>div{
+        width: fit-content;
+    }
 
     .leftBtnWrp>p {
         font-size: 17px;

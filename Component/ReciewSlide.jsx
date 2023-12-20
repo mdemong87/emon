@@ -10,9 +10,10 @@ import { FaUserAlt } from "react-icons/fa";
 import { IoMdQuote } from "react-icons/io";
 
 import { useSwiper } from 'swiper/react';
+import Image from 'next/image';
 
 
-export default function ReciewSlide() {
+export default function ReciewSlide({photo,name,position,heading,via,dis}) {
 
     const swiper = useSwiper();
     useEffect(() => {
@@ -26,11 +27,13 @@ export default function ReciewSlide() {
             <div className={styles.reviewsCardWrp}>
                 <div data-aos="flip-left" className={styles.reviewProfile}>
                     <div className={styles.reviewProfilePhoto}>
-                        <FaUserAlt className={styles.reviewProfileIcon} />
+                        {
+                            photo ? <Image className={styles.reviewerImage} src={photo} width={500} height={500} alt="Reviewer-Image"/> : <FaUserAlt className={styles.reviewProfileIcon} /> 
+                        }
                     </div>
                     <div className={styles.profileinfo}>
-                        <h2>Md Emon Hossen</h2>
-                        <p>CEO, DevEmon.com</p>
+                        <h2>{name}</h2>
+                        <p>{position}</p>
                     </div>
                 </div>
                 <div className={styles.reciewDitailse}>
@@ -50,8 +53,8 @@ export default function ReciewSlide() {
                     <div data-aos="fade-left" className={styles.reviewditaiseinfo}>
                         <div className={styles.reviewdetailseInfoheading}>
                             <div>
-                                <h2>Lorem ipsum dolor,dolor, sit amet consectetur adipisicing elit.</h2>
-                                <p>via <b>fiver</b></p>
+                                <h2>{heading}</h2>
+                                <p>via <b>{via}</b></p>
                             </div>
                             <div>
                                 <AiFillStar className={styles.starIcon} />
@@ -62,9 +65,7 @@ export default function ReciewSlide() {
                             </div>
                         </div>
                         <div className={styles.reviewdetailseInfoditailse}>
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil odio, sint corrupti voluptatem dolores perferendis rerum nulla quae nesciunt provident!
-                            </p>
+                            <p>{dis}</p>
                         </div>
                     </div>
                 </div>

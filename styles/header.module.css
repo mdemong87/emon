@@ -2,7 +2,7 @@
 .headerWrper {
     height: 80px;
     border-bottom: 1px solid #2f2f2f;
-    background: linear-gradient(to left, var(--bgPrimary), #29562c, var(--bgPrimary));
+    background: var(--bgPrimary);
     position: fixed;
     width: 100%;
     top: 0px;

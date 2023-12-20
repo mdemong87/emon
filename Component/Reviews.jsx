@@ -1,6 +1,7 @@
 "use client"
 import styles from "../styles/reviewSlide.module.css";
 import ReciewSlide from "./ReciewSlide";
+import nanosoft from "../public/nanosoft.jpg";
 
 // import Swiper core and required modules
 import { A11y, Autoplay, Navigation, Pagination } from 'swiper';
@@ -34,16 +35,12 @@ export default function Reviews() {
                 }}
             >
                 <SwiperSlide>
-                    <ReciewSlide />
+                    <ReciewSlide photo={nanosoft} name={'Fazlur Rahman'}position={'CEO, nanosoft.co.uk'} heading={'Nanosoft.co.uk Owner Review...'} via={'Linkdein'} dis={'From the initial consultation to the final product delivery, Nanosoft displays highly professionalism!'} />
                 </SwiperSlide>
+
+
                 <SwiperSlide>
-                    <ReciewSlide />
-                </SwiperSlide>
-                <SwiperSlide>
-                    <ReciewSlide />
-                </SwiperSlide>
-                <SwiperSlide>
-                    <ReciewSlide />
+                    <ReciewSlide photo={nanosoft} name={'Fazlur Rahman'}position={'CEO, nanosoft.co.uk'} heading={'Nanosoft.co.uk Owner Review...'} via={'Linkdein'} dis={'From the initial consultation to the final product delivery, Nanosoft displays highly professionalism!'} />
                 </SwiperSlide>
 
             </Swiper >

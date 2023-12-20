@@ -1,7 +1,7 @@
 export const smsSend = async (bodydata) => {
     try {
 
-        const response = await fetch('https://www.24bulksmsbd.com/api/smsSendApi', {
+        const response = await fetch(`${process.env.NEXT_PUBLIC_BULK_API_URL}`, {
             method: 'POST',
             headers: {
                 "Content-Type": "application/json"
