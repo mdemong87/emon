@@ -44,10 +44,15 @@
 .link {
     font-size: 16px;
     text-transform: uppercase;
-    color: var(--textPrimary);
     font-weight: 600;
     transition: all .3s;
     cursor: pointer;
+    color: var(--textPrimary);
+
+    background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(180deg, #fff, #838383);
 }
 
 .navberIcons {
@@ -69,7 +74,7 @@
 }
 
 .link:hover {
-    color: var(--color-primary);
+    background-image: linear-gradient(180deg, var(--color-primary), #85d9a0);
 }
 
 .transparantDiv {
@@ -166,10 +171,6 @@
         font-size: 16px;
         font-weight: 600;
         color: var(--textPrimary);
-    }
-
-    .link:hover {
-        background: rgb(61, 61, 61);
     }
 
 }

@@ -26,17 +26,17 @@ export default function Do() {
 
             <div className={styles.doCardWrper}>
 
-                <DoCard icon={<AiOutlineMobile className={styles.docardIcon} />} heading={"Mobile Apps"} discription={"I develop fast and easy to use Android and iOS Mobile Applications with amazing UI and UX."} />
+                <DoCard icon={<AiOutlineMobile className={'docardIcon'} />} heading={"Mobile Apps"} discription={"I develop fast and easy to use Android and iOS Mobile Applications with amazing UI and UX."} />
 
-                <DoCard icon={<AiOutlineAppstore className={styles.docardIcon} />} heading={"WEB Apps"} discription={"I design and develop amazing Websites that are easy to use, simple, fast and secure."} />
+                <DoCard icon={<AiOutlineAppstore className={'docardIcon'} />} heading={"Web Apps"} discription={"I design and develop amazing Websites that are easy to use, simple, fast and secure."} />
 
-                <DoCard icon={<AiOutlineAntDesign className={styles.docardIcon} />} heading={"UI Designs"} discription={"With the help of my amazing freelance partners, I provide eye catching Web and Mobile App UI / UX Designs"} />
+                <DoCard icon={<AiOutlineAntDesign className={'docardIcon'} />} heading={"UI Designs"} discription={"With the help of my amazing freelance partners, I provide eye catching Web and Mobile App UI / UX Designs"} />
 
-                <DoCard icon={<MdOutlineBusinessCenter className={styles.docardIcon} />} heading={"Business Experience"} discription={"I have been managing my own SAAS products and experience I gained from my own."} />
+                <DoCard icon={<MdOutlineBusinessCenter className={'docardIcon'} />} heading={"Business Experience"} discription={"I have been managing my own SAAS products and experience I gained from my own."} />
 
-                <DoCard icon={<AiOutlineRise className={styles.docardIcon} />} heading={"Strategy & Planning"} discription={"In freelance industry,no or least technical knowledge, I provide them with the best possible approach and business."} />
+                <DoCard icon={<AiOutlineRise className={'docardIcon'} />} heading={"Strategy & Planning"} discription={"In freelance industry,no or least technical knowledge, I provide them with the best possible approach and business."} />
 
-                <DoCard icon={<BiCodeAlt className={styles.docardIcon} />} heading={"Software Maintenance"} discription={"Beside software development services, I also provide life time (charged) my team."} />
+                <DoCard icon={<BiCodeAlt className={'docardIcon'} />} heading={"Software Maintenance"} discription={"Beside software development services, I also provide life time (charged) my team."} />
 
             </div>
         </section>

@@ -1,9 +1,9 @@
 import { Poppins } from 'next/font/google';
-import Container from '../Component/Container';
-import Footer from '../Component/Footer';
-import Header from '../Component/Header';
-import SmoothScroll from '../Component/SmoothScroll';
-import './globals.css';
+import Container from '../../../Component/Container';
+import Footer from '../../../Component/Footer';
+import Header from '../../../Component/Header';
+import SmoothScroll from '../../../Component/SmoothScroll';
+import '../../globals.css';
 
 
 const poppins = Poppins({
@@ -19,16 +19,14 @@ export const metadata = {
 export default function RootLayout({ children }) {
 
 
-
-
   return (
     <html lang="en">
       <body className={poppins.className}>
         <SmoothScroll />
         <Header />
-        <Container>
-          {children}
-        </Container>
+            <Container>
+              {children}
+            </Container>
         <Footer />
       </body>
     </html>

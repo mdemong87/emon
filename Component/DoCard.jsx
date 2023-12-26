@@ -15,7 +15,7 @@ export default function DoCard({ icon, heading, discription }) {
 
     return (
         <div data-aos="fade-up"
-            data-aos-anchor-placement="bottom-bottom" className={styles.doCradwp}>
+            data-aos-anchor-placement="bottom-bottom" className={`${styles.doCradwp} justforIconsHoverInglobalcss`}>
             <h1 className={styles.icons}>{icon}</h1>
             <h1 className={styles.docardheading}>{heading}</h1>
             <p className={styles.docarddis}>{discription}</p>

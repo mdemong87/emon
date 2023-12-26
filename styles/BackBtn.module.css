@@ -1,0 +1,26 @@
+.backBtnWrper{
+    width: 100%;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    background: var(--bgPrimary);
+}
+.backbtn{
+    width: 3rem;
+    height: 3rem;
+    background: #3b3b3b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.backIcons{
+    color: var(--textPrimary);
+    font-size: 2rem;
+}
+.backbtn:hover{
+    background: #616161;
+}

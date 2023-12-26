@@ -20,7 +20,7 @@ export default function Navber() {
                         <Link onClick={() => setisopen(!isoepn)} className={styles.link} href="#home">Home</Link >
                         <Link onClick={() => setisopen(!isoepn)} className={styles.link} href="#feature">Features</Link >
                         <Link onClick={() => setisopen(!isoepn)} className={styles.link} href="#skill">Skills</Link >
-                        <Link onClick={() => setisopen(!isoepn)} className={styles.link} href="#portfolio">Portfolios</Link >
+                        <Link onClick={() => setisopen(!isoepn)} className={styles.link} href="#portfolio">Projects</Link >
                         <Link onClick={() => setisopen(!isoepn)} className={styles.link} href="#reviews">Reviews</Link >
                         {/* <Link onClick={() => setisopen(!isoepn)} className={styles.link} href="#blog">Blogs</Link > */}
                         <Link onClick={() => setisopen(!isoepn)} className={styles.link} href="#contact">Contact</Link >

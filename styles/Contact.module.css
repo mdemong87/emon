@@ -5,7 +5,7 @@
 
 .contactWrp {
     display: grid;
-    grid-template-columns: 1fr 60px 1fr;
+    grid-template-columns: 1fr 2fr;
     align-items: center;
     gap: 20px;
 }
@@ -18,18 +18,10 @@
     box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
 }
 
-.orWrp {
-    background: var(--bgPrimary) !important;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: var(--color-primary);
+.allLinkWrper{
+    padding: 16px;
 }
 
-.orWrp>h1 {
-    font-size: 26px;
-    font-weight: 600;
-}
 
 
 

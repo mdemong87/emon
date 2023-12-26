@@ -8,13 +8,16 @@
     transition: all .3s;
     cursor: pointer;
     overflow-y: hidden;
-    color: var(--textPrimary);
     padding-bottom: 30px !important;
 }
 
 
 .docardheading {
     margin-bottom: 15px !important;
+    background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(180deg, #fff, #838383);
 }
 
 .docarddis {
@@ -25,18 +28,16 @@
     background-color: var(--color-primary);
 }
 
-.doCradwp:hover .docardIcon {
-    color: #fff !important;
-    animation: doCardinsideAnimation .2s forwards;
-}
-
 .doCradwp:hover .docardheading {
-    color: #fff !important;
+    background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(180deg, #fff, #fff);
     animation: doCardinsideAnimation .3s forwards;
 }
 
 .doCradwp:hover .docarddis {
-    color: #fff !important;
+    color: #ddd !important;
     animation: doCardinsideAnimation .5s forwards;
 }
 
@@ -44,16 +45,17 @@
     background-color: var(--color-primary);
 }
 
-.doCradwp:focus .docardIcon {
-    color: #fff !important;
-}
 
 .doCradwp:focus .docardheading {
-    color: #fff !important;
+    background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(180deg, #fff, #fff);
+    animation: doCardinsideAnimation .3s forwards;
 }
 
 .doCradwp:focus .docarddis {
-    color: #fff !important;
+    color: #ddd !important;
 }
 
 

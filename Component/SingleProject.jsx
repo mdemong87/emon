@@ -3,8 +3,9 @@
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // You can also use <link> for styles
 import Link from "next/link";
+import Image from 'next/image';
 import { useEffect } from 'react';
-import { AiOutlineArrowRight } from "react-icons/ai";
+import nanosoft from "../public/nanoProject.png";
 import styles from "../styles/singleProject.module.css";
 
 
@@ -16,20 +17,15 @@ export default function SingleProject() {
     }, [])
 
     return (
-        <div className={styles.SingleProjectWrp} data-aos="fade-up"
+        <Link href={'/project'} className={styles.SingleProjectWrp} data-aos="fade-up"
             data-aos-anchor-placement="bottom-bottom" >
-            <div>
-                gdfs
+            <div className={styles.ProjectImageWrper}>
+                <Image className={styles.projectImage} src={nanosoft} width={500} hight={500} alt="project-image"/>
             </div>
             <div className={styles.singleprojectDetailseWrper}>
-                <h1>This is heading for a project...</h1>
-                <div className={styles.exploreWrp}>
-                    <Link className={styles.exploreLink} href={'/project'}>
-                        <span>Explore</span>
-                        <AiOutlineArrowRight className={styles.icons} />
-                    </Link>
-                </div>
+                <h1>Nanosoft.co.uk</h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
             </div>
-        </div>
+        </Link>
     )
 }
