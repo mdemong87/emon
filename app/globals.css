@@ -18,21 +18,9 @@
 
 
 ::-webkit-scrollbar {
-  width: 7.5px;
+  display: none;
 }
 
-::-webkit-scrollbar-thumb {
-  background: var(--color-primary);
-  border-radius: 600px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: #138336;
-}
-
-::-webkit-scrollbar-track {
-  background: var(--bgPrimary);
-}
 
 
 
@@ -51,6 +39,7 @@ a {
   color: inherit;
   text-decoration: none;
 }
+
 
 .container {
   width: 80%;
