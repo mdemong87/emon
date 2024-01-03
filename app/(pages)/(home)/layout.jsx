@@ -13,7 +13,14 @@ const poppins = Poppins({
 
 export const metadata = {
   title: 'Md Emon Hossen',
-  description: 'I am a Full Stack Software Developer, I provides Web & Mobile App Development services and complete technical solutions for businesses of any size and nature, My services has helped startups, companies and individuals all around the globe.',
+  description: 'My name is Md Emon Hossen.Fontend Engineer.I have a passion for building beautiful, responsive, and user-friendly websites that provide an exceptional user experience.I enjoy keeping up-to-date with the latest web development trends and technologies and continuously strive to improve my skills and knowledge.',
+  keywords: ["web developer", 'web designer', 'frontend developer', 'frontend engineer', 'mren stack', "emon"],
+  openGraph: {
+    type: 'website',
+    locale: 'en_US',
+    url: 'https://emonhossen.xyz',
+    site_name: 'Md Emon Hossen',
+  }
 }
 
 export default function RootLayout({ children }) {
@@ -24,9 +31,9 @@ export default function RootLayout({ children }) {
       <body className={poppins.className}>
         <SmoothScroll />
         <Header />
-            <Container>
-              {children}
-            </Container>
+        <Container>
+          {children}
+        </Container>
         <Footer />
       </body>
     </html>

@@ -6,6 +6,7 @@ import { BsFillSendFill } from "react-icons/bs";
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import styles from "../styles/Masseagesend.module.css";
+import Loading from "./SendbtnLoading";
 
 export default function MassegeSend() {
 
@@ -14,10 +15,12 @@ export default function MassegeSend() {
     const [email, setemail] = useState('');
     const [subject, setsubject] = useState('');
     const [message, setmessage] = useState('');
+    const [isloading, setisloading] = useState(false);
 
     const handlebtn = async () => {
         if (name != '' && email != '' && subject != '' && message != '') {
             try {
+                setisloading(true);
                 const res = await fetch("/api", {
                     method: "POST",
                     headers: {
@@ -26,6 +29,7 @@ export default function MassegeSend() {
                     body: JSON.stringify({ name, email, subject, message })
                 })
                 const response = await res.json();
+                setisloading(false);
                 if (response.success) {
                     setname('');
                     setemail('');
@@ -58,8 +62,19 @@ export default function MassegeSend() {
             <textarea onChange={(e) => setmessage(e.target.value)} value={message} placeholder="Massege..."></textarea>
             <div className={styles.btnWrp}>
                 <button onClick={() => handlebtn()} className={styles.sendBtn}>
-                    <span>Send</span>
-                    <BsFillSendFill />
+                    {
+                        isloading ? (
+                            <div className={styles.sendbtninsideWrper}>
+                                <Loading />
+                            </div>
+                        ) : (
+                            <div className={styles.sendbtninsideWrper}>
+                                <span>Send</span>
+                                <BsFillSendFill />
+                            </div>
+                        )
+                    }
+
                 </ button>
             </div>
         </div>

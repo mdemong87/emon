@@ -2,14 +2,13 @@
 
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // You can also use <link> for styles
-import Link from "next/link";
 import Image from 'next/image';
+import Link from "next/link";
 import { useEffect } from 'react';
-import nanosoft from "../public/nanoProject.png";
 import styles from "../styles/singleProject.module.css";
 
 
-export default function SingleProject() {
+export default function SingleProject({ img, heading, dis }) {
 
 
     useEffect(() => {
@@ -20,11 +19,11 @@ export default function SingleProject() {
         <Link href={'/project'} className={styles.SingleProjectWrp} data-aos="fade-up"
             data-aos-anchor-placement="bottom-bottom" >
             <div className={styles.ProjectImageWrper}>
-                <Image className={styles.projectImage} src={nanosoft} width={500} hight={500} alt="project-image"/>
+                <Image className={styles.projectImage} src={img} width={500} hight={500} alt="project-image" />
             </div>
             <div className={styles.singleprojectDetailseWrper}>
-                <h1>Nanosoft.co.uk</h1>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <h1>{heading}</h1>
+                <p>{dis}</p>
             </div>
         </Link>
     )

@@ -39,15 +39,23 @@
 }
 
 .sendBtn {
-    background: var(--color-primary);
+    background: linear-gradient(180deg, #85d9a0, var(--color-primary));
     padding: 10px;
     width: 100%;
     height: 100%;
     border-radius: 7px;
     font-size: 20px;
     font-weight: 600;
-    color: #fff;
     cursor: pointer;
+    transition: .3s;
+    color: #f1f1f1;
+}
+
+.sendBtn:hover {
+    background: linear-gradient(180deg, var(--color-primary), #85d9a0);
+}
+
+.sendbtninsideWrper {
     display: flex;
     justify-content: center;
     gap: 10px;
